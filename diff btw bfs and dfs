@@ -1,0 +1,25 @@
+S.NO.       	BFS                                                                          	DFS
+1.	BFS stands for Breadth First Search.	                                     *   DFS stands for Depth First Search.
+
+2.	BFS(Breadth First Search) uses Queue data structure for                    *  DFS(Depth First Search) uses Stack data structure.
+finding the shortest path.	                                                   
+3.	BFS can be used to find single source shortest path in an                     *	In DFS, we might traverse through more edges to reach a destination vertex  
+unweighted graph, because in BFS, we reach a vertex with minimum                       from a source.
+number of edges from a source vertex.
+4.	BFS is more suitable for searching vertices which are closer                *   DFS is more suitable when there are solutions away from source.
+to the given source.	
+5.	BFS considers all neighbors first and therefore not suitable                 *  DFS is more suitable for game or puzzle problems. We make a decision, then explore
+     for decision making trees used in games or puzzles.	                         all paths through this decision. And if this decision leads to win situation, we stop.
+
+6.	The Time complexity of BFS is O(V + E) when Adjacency List                  *   The Time complexity of DFS is also O(V + E) when Adjacency List is used and O(V^2) .
+is used and O(V^2) when Adjacency Matrix is used, where V                             when Adjacency Matrix is used, where V stands for vertices and E stands for edges
+stands for vertices and E stands for edges.	
+7.	Here, siblings are visited before the children	                             *     Here, children are visited before the siblings
+8.	In BFS there is no concept of backtracking. 	                               *   DFS algorithm is a recursive algorithm that uses the idea of backtracking
+9.	BFS is used in various application such as  bipartite graph,                 * 	DFS is used in various application such as acyclic graph and topological order etc.
+and shortest path etc.
+10.	BFS requires more memory. 	DFS requires less memory. 
+11.	BFS is optimal for finding the shortest path.                                *    	DFS is not optimal for finding the shortest path.
+12.	In BFS the space complexity is more critical as compared to time
+complexity.	                                                                      *  In DFS has lesser space complexity, because at a time it needs to store only
+                                                                                        single path from the root to leaf node.
